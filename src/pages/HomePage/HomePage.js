@@ -1,6 +1,7 @@
 import Header from '../../components/Header/Header';
 import Intro from '../../components/Intro/Intro';
-import Navbar from '../../components/Navbar/Navbar'
+import Navbar from '../../components/Navbar/Navbar';
+import Connect from '../../components/Connect/Connect';
 
 export default function HomePage() {
     return (
@@ -8,6 +9,7 @@ export default function HomePage() {
         <Header/>
         <Intro/>
         <Navbar/>
+        <Connect/>
       </div>
     );
   }
