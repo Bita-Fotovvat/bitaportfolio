@@ -1,0 +1,18 @@
+@use "./variables" as *;
+
+@mixin tablet-and-desktop {
+    @media (min-width: $tablet-breakpoint) {
+        @content;
+    }
+}
+@mixin desktop {
+    @media (min-width: $desktop-breakpoint) {
+        @content;
+    }
+}
+
+@mixin big-mobile-screen {
+    @media (min-width: 450px) {
+        @content;
+    }
+}
