@@ -1,7 +1,7 @@
 import './Navbar.scss';
 import {useState} from 'react';
 export default function Navbar(){
-    const [activeNavItem, setActiveNavItem] = useState(null);
+    const [activeNavItem, setActiveNavItem] = useState(1);
     const navItems = [
         {id:1, value:"About"},
         {id:2, value:"Experience"},

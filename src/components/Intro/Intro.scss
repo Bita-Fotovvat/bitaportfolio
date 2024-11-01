@@ -17,4 +17,8 @@
         font-size: $sub-title-fontsize;
         font-weight: $sub-title-fontweight;
     }
+    &--body{
+        margin-top: 2rem; //
+        width: 20vw;
+    }
 }
