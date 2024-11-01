@@ -1,24 +1,23 @@
 import './Navbar.scss';
-
+import {useState} from 'react';
 export default function Navbar(){
+    const [activeNavItem, setActiveNavItem] = useState(false);
+    const navItems = [
+        {id:1, value:"About"}, 
+        {id:2, value:"Experience"}, 
+        {id:3, value:"Projects"}
+    ];
+    function handleClick(e){
+        setActiveNavItem(!activeNavItem);
+    }
+
     return(
         <>
-        <section>
-            <div className='navbar--bar'></div>
-            <p>About</p>
-        </section>
-        <section>
-            <div className='navbar--bar'></div>
-            <p>Experience</p>
-        </section>
-        <section>
-            <div className='navbar--bar'></div>
-            <p>Projects</p>
-        </section>
-        <section>
-            <div className='navbar--bar'></div>
-            <p>Interests</p>
-        </section>
+        <ul className="navbar">
+            {navItems.map((item)=>{
+                return(<li key={item.id}>{item.value}</li>)
+            })}
+        </ul>
         </>
     )
 }
