@@ -1,0 +1,11 @@
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/_global" as *;
+
+.container{
+    display: block;
+        @include tablet-and-desktop{
+            display: flex;
+            flex-direction: row;
+        }
+    }

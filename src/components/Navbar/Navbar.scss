@@ -6,8 +6,11 @@
 .navbar{
         &--item{
             &__container{
-                display: flex;
-                flex-direction: row;
+                display: none;
+                @include tablet-and-desktop{
+                    display: flex;
+                    flex-direction: row;
+                }
             }
             &__line{
                 cursor: pointer;
