@@ -1,0 +1,20 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/_global" as *;
+
+.intro{
+    // margin: auto;
+    padding: 3rem;
+    // max-width: 40rem;
+    background-color: $main-bg-color;
+    color: white;
+    &--title{
+        font-size: $main-title-fontsize;
+        font-weight: $main-title-fontweight;
+    }
+    &--subtitle{
+        font-size: $sub-title-fontsize;
+        font-weight: $sub-title-fontweight;
+    }
+}
