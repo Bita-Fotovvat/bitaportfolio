@@ -14,11 +14,12 @@
         font-weight: $main-title-fontweight;
     }
     &--subtitle{
-        font-size: $sub-title-fontsize;
+        margin-top: 1rem;
+        font-size: 1rem;
         font-weight: $sub-title-fontweight;
     }
     &--body{
         margin-top: 2rem; //
-        width: 20vw;
+        // width: 20vw;
     }
 }

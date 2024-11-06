@@ -1,0 +1,17 @@
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/_global" as *;
+@use "../../styles/partials/_variables" as *;
+
+.connect{
+    &--list{
+        background-color: $main-bg-color;
+        list-style-type: none;
+        color: white;
+        display: flex;
+        flex-direction: row;
+    }
+    &--img{
+        background-color: white;
+    }
+}
