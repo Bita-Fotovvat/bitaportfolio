@@ -43,7 +43,7 @@ export default function HomePage() {
             title={projects.title}
             body={projects.body}
             />
-                        <Detail 
+            <Detail 
             title={experience.title}
             body={experience.body}
             />

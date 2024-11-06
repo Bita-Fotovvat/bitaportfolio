@@ -1,3 +1,19 @@
 @use "../../styles/partials/typography" as *;
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/_global" as *;
+@use "../../styles/partials/_variables" as *;
+
+.detail{
+    background-color: $main-bg-color;
+    color: white;
+    &--title{
+        padding: 1rem;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        background-color: inherit;
+    }
+    &--body{
+        padding: 0 1rem 0 1rem;
+    }
+}
