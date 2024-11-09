@@ -1,3 +1,30 @@
 @use "../../styles/partials/typography" as *;
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/_global" as *;
+@use "../../styles/partials/_variables" as *;
+
+.detail{
+    padding: 1rem 2rem 1rem 2rem;
+    background-color: $main-bg-color;
+    color: white;
+    &--title{
+        font-size: 1.5rem;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        background-color: inherit;
+        padding: 0 0 0.5rem 0;
+    }
+    &--subtitle{
+        font-size: 1rem;
+        padding: 1rem 0 0.5rem 0;
+    }
+    &--body{
+        color: $medium-color;
+        padding-bottom: 0.5rem;
+    }
+    &--projectimage{
+        width: 13rem;
+        padding: 1rem 0 0 0;
+    }
+}

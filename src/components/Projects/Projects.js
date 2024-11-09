@@ -1,11 +1,17 @@
 import './Projects.scss';
 
-export default function Projects(){
+export default function Projects(props){
     return(
         <>
-        <h2 className="experience--title">Projects</h2>
-        <p className="experience--body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-        <img />
+        <article className='detail'>
+            <h2 className="detail--title">{props.title}</h2>
+            <h3 className="detail--subtitle">{props.subtitle}</h3>
+            <p className="detail--body">{props.body}</p>
+            <img className="detail--projectimage" src={props.image} />
+            <h3 className="detail--subtitle">{props.subtitle2}</h3>
+            <p className="detail--body">{props.body2}</p>
+            <img className="detail--projectimage" src={props.image2} />
+        </article>
         </>
     )
 }
