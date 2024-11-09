@@ -15,7 +15,16 @@
         background-color: inherit;
         padding: 0 0 0.5rem 0;
     }
+    &--subtitle{
+        font-size: 1rem;
+        padding: 1rem 0 0.5rem 0;
+    }
     &--body{
         color: $medium-color;
+        padding-bottom: 0.5rem;
+    }
+    &--projectimage{
+        width: 13rem;
+        padding: 1rem 0 0 0;
     }
 }
