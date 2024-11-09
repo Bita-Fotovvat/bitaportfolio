@@ -4,14 +4,18 @@
 @use "../../styles/partials/_variables" as *;
 
 .connect{
-    &--list{
         background-color: $main-bg-color;
         list-style-type: none;
         color: white;
         display: flex;
         flex-direction: row;
-    }
+        justify-content:left;
+        gap: 4vw;
+        padding: 0 0 1rem 3rem;
+        
     &--img{
-        background-color: white;
+        width: 20px;
+        cursor: pointer;
+        // background-color: white;
     }
 }

@@ -9,7 +9,7 @@ export default function HomePage() {
     {
       id:1,
       title: "About",
-      body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      body: "As a former polymer engineer turned software developer, I’ve embraced a new career path driven by my passion for building impactful, user-friendly solutions. My focus is now on creating intuitive, user-centric tools that streamline tasks and enhance everyday experiences. By combining my problem-solving mindset and technical skills, I aim to deliver valuable products while doing what I love."
     },
     {
       id:2,
