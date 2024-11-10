@@ -1,31 +1,22 @@
 import './Projects.scss';
 
-export default function Projects(props){
-    console.log(props.techstack);
+export default function Projects({title, projects}){
     return(
         <>
         <article className='projects'>
-            <h2 className="projects--title">{props.title}</h2>
-            <h3 className="projects--subtitle">{props.subtitle}</h3>
-            <p className="projects--body">{props.body}</p>
-            <img className="projects--projectimage" src={props.image} />
-            <ul className='projects--techstack'>
-                {props.techstack.map(item=>{
-                    return(
-                        <li className='projects--techstack__item'>{item}</li>
-                    )
-                })}
-            </ul>
-            <h3 className="projects--subtitle">{props.subtitle2}</h3>
-            <p className="projects--body">{props.body2}</p>
-            <img className="projects--projectimage" src={props.image2} />
-            <ul className='projects--techstack'>
-            {props.techstack2.map(item=>{
-                    return(
-                        <li className='projects--techstack__item'>{item}</li>
-                    )
-                })}
-            </ul>
+            <h2 className="projects--title">{title}</h2>
+            {projects.map((project, index) => (
+                <div key={project.id || index} className="project">
+                    <h3 className="projects--subtitle">{project.title}</h3>
+                    <p className="projects--body">{project.body}</p>
+                    <img className="projects--projectimage" src={project.image} alt={project.title} />
+                    <ul className='projects--techstack'>
+                        {project.techstack.map((item, i) => (
+                            <li key={i} className='projects--techstack__item'>{item}</li>
+                        ))}
+                    </ul>
+                </div>
+            ))}
         </article>
         </>
     )
