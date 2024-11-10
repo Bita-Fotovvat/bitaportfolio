@@ -42,6 +42,30 @@ export default function HomePage() {
   const about = detailData[0];
   const experience = detailData[1];
 
+  const experiencesData = [
+    {
+      timeFrame : "JUN 2024 -SEP 2024",
+      title : "Software Developer",
+      company : "makeitMVP",
+      description: "Worked with the UI team to engineer and improve major features and eveloped front end architecture, while contributing to backend development",
+      techStack: ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Sass"]
+    },
+    {
+      timeFrame : "AUG 2021 -DEC 2023",
+      title : "Front-End Developer",
+      company : "Unitedreams",
+      description: "Collaborated with cross-functional teams and	developed scalable, responsive user interfaces using React.js and CSS while adhering to design patterns and UX principles.",
+      techStack: ["HTML", "CSS", "JavaScript"]
+    },
+    {
+      timeFrame : "APR 2020 -AUG 2021",
+      title : "Front-End Developer",
+      company : "Ako Pouyaye Pars",
+      description: "Developed front-end solutions that improved user experience and performance, implementing features with modern web technologies.",
+      techStack: ["HTML", "CSS", "Sass", "JS"]
+    }
+  ]
+
   return (
       <div className="home">
         <div className="container">
