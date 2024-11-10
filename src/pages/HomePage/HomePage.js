@@ -43,7 +43,9 @@ export default function HomePage() {
   const about = detailData[0];
 
   const experiencesData = [
+    "Experiences",
     {
+      id: Math.random()*1000,
       timeFrame : "JUN 2024 -SEP 2024",
       title : "Software Developer",
       company : "makeitMVP",
@@ -51,6 +53,7 @@ export default function HomePage() {
       techStack: ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Sass"]
     },
     {
+      id: Math.random()*1000,
       timeFrame : "AUG 2021 -DEC 2023",
       title : "Front-End Developer",
       company : "Unitedreams",
@@ -58,6 +61,7 @@ export default function HomePage() {
       techStack: ["HTML", "CSS", "JavaScript"]
     },
     {
+      id: Math.random()*1000,
       timeFrame : "APR 2020 -AUG 2021",
       title : "Front-End Developer",
       company : "Ako Pouyaye Pars",
@@ -84,11 +88,8 @@ export default function HomePage() {
             projects={projectsData.slice(1)}
             />
             <Experience 
-            title={experiencesData[0].title}
-            timeFrame={experiencesData[0].timeFrame}
-            company={experiencesData[0].company}
-            description={experiencesData[0].description}
-            techStack={experiencesData[0].techStack}
+            title={experiencesData[0]}
+            experiences={experiencesData.slice(1)}
             />
           </section>
         </div>

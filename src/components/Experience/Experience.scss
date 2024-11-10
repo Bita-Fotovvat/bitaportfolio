@@ -1,0 +1,53 @@
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/_global" as *;
+@use "../../styles/partials/_variables" as *;
+
+.experiences{
+    padding: 1rem 2rem 1rem 2rem;
+    background-color: $main-bg-color;
+    color: white;
+    &--title{
+        font-size: 1.5rem;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        background-color: inherit;
+        padding: 0 0 0.5rem 0;
+    }
+    &--subtitle{
+        font-size: 1rem;
+        padding: 1rem 0 0.1rem 0;
+        transition: color 0.3s ease;
+    }
+    &--subheadingcontainer{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 4vw;
+        margin-bottom: 0.5rem;
+    }
+    &--company{
+        font-size: 0.9rem;
+    }
+    &--timeframe{
+        font-size: 0.8rem;
+    }
+    &--description{
+        color: $medium-color;
+    }
+    &--techstack{
+        padding: 0.5rem 0 0 0;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 0.8rem;
+        &__item{
+            color: $secondary-main-color;
+            margin: 0.25rem;
+            list-style-type: none;
+            background-color: $light-background-color;
+            padding: 0.1rem 0.5rem 0.1rem 0.5rem;
+            border-radius: 15px;
+        }
+    }
+}
