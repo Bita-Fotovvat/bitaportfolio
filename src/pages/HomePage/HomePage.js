@@ -27,13 +27,15 @@ export default function HomePage() {
       id: (Math.random)*1000,
       title: "Travel Planner",
       body: "Travel Planner is a website designed to simplify the trip planning process. It enables users to gather information and create personalized travel itineraries.",
-      image : TravelPlannerImage
+      image : TravelPlannerImage,
+      techstack : ["JavaScript","React","HTML", "CSS", "Node.JS", "MySQL"]
       },
       {
       id: (Math.random)*1000,
       title: "Xeus Home Website",
       body: "The Xeus Home website showcases a renovation company, providing an engaging platform to introduce its services and connect effectively with its audience.",
-      image : XeusHomeImage
+      image : XeusHomeImage,
+      techstack : ["JavaScript","React","HTML", "CSS"]
       }
    ]
 
@@ -59,10 +61,12 @@ export default function HomePage() {
             subtitle={projectsData[1].title}
             body={projectsData[1].body}
             image={projectsData[1].image}
+            techstack={projectsData[1].techstack}
 
             subtitle2={projectsData[2].title}
             body2={projectsData[2].body}
             image2={projectsData[2].image}
+            techstack2={projectsData[2].techstack}
             />
             <Detail 
             title={experience.title}
