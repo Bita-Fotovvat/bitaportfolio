@@ -1,6 +1,7 @@
 @use "../../styles/partials/typography" as *;
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/_global" as *;
+@use "../../styles/partials/_variables" as *;
 
 .container{
     display: block;
@@ -8,4 +9,14 @@
             display: flex;
             flex-direction: row;
         }
+    }
+    p::selection,
+    h1::selection,
+    h2::selection,
+    h3::selection,
+    li::selection,
+    img::selection
+     {
+        background-color: #91a7f2;
+        color: #fcfcfc;
     }
