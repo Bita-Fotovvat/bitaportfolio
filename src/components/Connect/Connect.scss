@@ -19,6 +19,6 @@
         transition: filter 0.3s ease;
     }
     &--img:hover{
-        filter: brightness(10);
+        filter: $hover-filter;
     }
 }

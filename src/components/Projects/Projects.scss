@@ -15,9 +15,27 @@
         background-color: inherit;
         padding: 0 0 0.5rem 0;
     }
+    &--titlecontainer{
+        display: flex;
+        align-items: center;
+        &:hover {
+            .projects--arrowicon {
+                transform: rotate(0deg);
+                filter: $hover-filter;
+            }
+            .projects--subtitle {
+                color: $secondary-main-color;
+            }
+        }
+    }
+    &--arrowicon{
+        height: 0.5rem;
+        transform: rotate(-45deg);
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
     &--subtitle{
         font-size: 1rem;
-        padding: 1rem 0 0.5rem 0;
+        padding: 1rem 1rem 1rem 0;
         cursor: pointer;
         transition: color 0.3s ease;
     }
