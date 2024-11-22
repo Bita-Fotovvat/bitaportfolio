@@ -4,33 +4,57 @@
 @use "../../styles/partials/_global" as *;
 
 .navbar{
+    background-color: $main-bg-color;
+    margin-top: 2rem;
+    @include tablet-and-desktop{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
         &--item{
             &__container{
                 display: none;
                 @include tablet-and-desktop{
+                    padding-bottom: 1rem;
                     display: flex;
                     flex-direction: row;
+                    gap: 1rem;
+                    &:hover{
+                        .navbar--item__title {
+                            color: white;
+                            font-size: 1.25rem;
+                        }
+    
+                        .navbar--item__line {
+                            background-color: white;
+                            transform: scaleX(1.5);
+                        }
+                    }
                 }
             }
             &__line{
                 cursor: pointer;
-                background-color: black;
-                height: 0.25rem; //
-                width: 3rem; //
-                margin-top: 0.5rem; //
-                margin-right: 0.5rem; //
+                background-color: $medium-color;
+                height: 0.1rem;
+                width: 3rem;
+                margin-top: 0.5rem;
+                margin-right: 0.5rem;
+                transition: transform 0.3s ease;
+                transform-origin: left;
             }
             &__title{
                 cursor: pointer;
-                font-size: 1.25rem;
+                font-size: 1rem;
                 list-style-type: none;
-                color: black;
+                color: $medium-color;
+                transition: font-size 0.3s ease, color 0.3s ease;
             }
         } 
     }
 .active{
-    color: red;
+    color: white;
+    font-size: 1.25rem;
     &--line{
-        background-color: red;
+        background-color: white;
+        transform: scaleX(1.5);
     }
 }

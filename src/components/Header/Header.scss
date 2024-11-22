@@ -4,8 +4,16 @@
 @use "../../styles/partials/_global" as *;
 
 .header{
+    padding: 1rem 0 0 0;
+    background-color: $main-bg-color;
     &--container{
         display: flex;
         flex-direction: row;
+        gap: 3vw;
+    }
+    &--item{
+        color: $secondary-main-color;
+        font-size: 0.7rem;
+        list-style-type: none;
     }
 }

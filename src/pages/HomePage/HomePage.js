@@ -67,7 +67,7 @@ export default function HomePage() {
 
   return (
       <div className="home">
-        <div className="container">
+        <div className="home--container">
           <section className="home--leftside">
             <Intro/>
             <Navbar/>

@@ -7,6 +7,10 @@
     padding: 2rem 2rem 1rem 2rem;
     background-color: $main-bg-color;
     color: white;
+    @include tablet-and-desktop{
+        padding-top: 1rem;
+        width: 38vw;
+    }
     &--title{
         font-size: $main-title-fontsize;
         font-weight: $main-title-fontweight;

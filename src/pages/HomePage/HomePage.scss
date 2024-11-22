@@ -3,7 +3,8 @@
 @use "../../styles/partials/_global" as *;
 @use "../../styles/partials/_variables" as *;
 
-.container{
+.home{
+    &--container{
     display: block;
         @include tablet-and-desktop{
             display: flex;
@@ -20,3 +21,18 @@
         background-color: $third-website-color;
         color: white;
     }
+    &--leftside{
+        @include tablet-and-desktop{
+            height: 100vh;
+            position: sticky;
+            top: 0;
+            padding-top: 3rem;
+            width: 35vw;
+        }
+    }
+    &--rightside{
+        @include tablet-and-desktop{
+            padding-top: 3rem;
+        }
+    }
+}
