@@ -10,10 +10,13 @@
     &--title{
         font-size: 1.5rem;
         position: sticky;
-        top: 0;
+        top: 3.25rem;
         z-index: 1;
         background-color: inherit;
         padding: 0 0 0.5rem 0;
+        @include tablet-and-desktop{
+            padding-bottom: 3rem;
+        }
     }
     &--subtitle{
         font-size: 1rem;

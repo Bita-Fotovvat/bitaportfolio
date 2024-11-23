@@ -1,4 +1,5 @@
 import './HomePage.scss';
+import { useRef } from 'react';
 import Intro from '../../components/Intro/Intro';
 import Navbar from '../../components/Navbar/Navbar';
 import Connect from '../../components/Connect/Connect';
@@ -9,6 +10,14 @@ import XeusHomeImage from "../../assets/project-images/xeushome.png";
 import Experience from '../../components/Experience/Experience';
 
 export default function HomePage() {
+  const aboutRef = useRef(null);
+  const projectsRef = useRef(null);
+  const experiencesRef = useRef(null);
+
+  const scrollToSection = (ref) => {
+    ref.current.scrollIntoView({ behavior: 'smooth' });
+  };
+
   const detailData = [
     {
       id: (Math.random)*1000,
@@ -70,22 +79,25 @@ export default function HomePage() {
         <div className="home--container">
           <section className="home--leftside">
             <Intro/>
-            <Navbar/>
+            <Navbar
+            onNavItemClick={(id) => {
+              if (id === 1) scrollToSection(aboutRef);
+              else if (id === 2) scrollToSection(projectsRef);
+              else if (id === 3) scrollToSection(experiencesRef);
+            }}
+            />
             <Connect/>
           </section>
           <section className="home--rightside">
-            <Detail 
-            title={about.title}
-            body={about.body}
-            />
-            <Projects 
-            title={projectsData[0]}
-            projects={projectsData.slice(1)}
-            />
-            <Experience 
-            title={experiencesData[0]}
-            experiences={experiencesData.slice(1)}
-            />
+            <div ref={aboutRef}>
+              <Detail title={about.title} body={about.body} />
+            </div>
+            <div ref={projectsRef}>
+              <Projects title={projectsData[0]} projects={projectsData.slice(1)} />
+            </div>
+            <div ref={experiencesRef}>
+              <Experience title={experiencesData[0]} experiences={experiencesData.slice(1)} />
+            </div>
           </section>
         </div>
       </div>
