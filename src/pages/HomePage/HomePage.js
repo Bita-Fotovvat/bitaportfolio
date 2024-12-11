@@ -33,14 +33,16 @@ export default function HomePage() {
       title: "Travel Planner",
       body: "Travel Planner is a website designed to simplify the trip planning process. It enables users to gather information and create personalized travel itineraries.",
       image : TravelPlannerImage,
-      techstack : ["JavaScript","React","HTML", "CSS", "Node.JS", "MySQL"]
+      techstack : ["JavaScript","React","HTML", "CSS", "Node.JS", "MySQL"],
+      link : "https://github.com/Bita-Fotovvat/bita-fotovvat-travelplanner"
       },
       {
       id: Math.random()*1000,
       title: "Xeus Home Website",
       body: "The Xeus Home website showcases a renovation company, providing an engaging platform to introduce its services and connect effectively with its audience.",
       image : XeusHomeImage,
-      techstack : ["JavaScript","React","HTML", "CSS"]
+      techstack : ["JavaScript","React","HTML", "CSS"],
+      link : "https://xeushome.ca"
       }
    ]
 

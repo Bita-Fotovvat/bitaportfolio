@@ -4,7 +4,7 @@
 @use "../../styles/partials/_variables" as *;
 
 .projects{
-    padding: 1rem 2rem 1rem 2rem;
+    padding: 0 2rem 1rem 2rem;
     background-color: $main-bg-color;
     color: white;
     &--title{
@@ -13,7 +13,13 @@
         top: 0;
         z-index: 1;
         background-color: inherit;
-        padding: 0 0 0.5rem 0;
+        padding: 1rem 0 1rem 0;
+        @include tablet-and-desktop{
+            padding: 0 0 2rem 0;
+            height: 8rem;
+            display: flex;
+            align-items: end;
+        }
     }
     &--titlecontainer{
         display: flex;
@@ -33,6 +39,10 @@
         transform: rotate(-45deg);
         transition: transform 0.3s ease, filter 0.3s ease;
     }
+    &--link{
+        text-decoration: none;
+        color: inherit;
+    }
     &--subtitle{
         font-size: 1rem;
         padding: 1rem 1rem 1rem 0;
@@ -44,21 +54,23 @@
     }
     &--body{
         color: $medium-color;
-        padding-bottom: 0.5rem;
+        padding-bottom: 1.5rem;
     }
     &--projectimage{
         border-radius: 6px;
         width: 13rem;
         padding: 1rem 0 0 0;
         cursor: pointer;
-        transition: transform 2s ease, filter 1s ease;
+        transition: filter 1s ease;
+        @include tablet-and-desktop{
+            width: 16rem;
+        }
     }
     &--projectimage:hover{
         filter: hue-rotate(180deg);
-        transform: scale(1.05);
     }
     &--techstack{
-        padding: 0.5rem 0 0 0;
+        padding: 1.5rem 0 0 0;
         display: flex;
         flex-wrap: wrap;
         font-size: 0.8rem;

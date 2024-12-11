@@ -1,0 +1,28 @@
+.highlight-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #282c34;
+    color: white;
+  
+    .highlight {
+      position: absolute;
+      width: 200px; // Adjust the size of the highlight
+      height: 200px;
+      border-radius: 50%; // Circular shape
+      background: radial-gradient(circle, rgba(255, 255, 0, 0.5) 0%, rgba(255, 255, 0, 0) 70%);
+      pointer-events: none; // Allow interactions with content below
+      transform: translate(-50%, -50%); // Center the highlight on the cursor
+      transition: background 0.2s ease, opacity 0.2s ease;
+      z-index: 1;
+    }
+  
+    .content {
+      position: relative;
+      z-index: 2; // Ensure content is above the highlight
+      text-align: center;
+      padding-top: 30vh;
+    }
+  }
+  

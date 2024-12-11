@@ -4,18 +4,21 @@
 @use "../../styles/partials/_variables" as *;
 
 .detail{
-    padding: 1rem 2rem 1rem 2rem;
+    padding: 0 2rem 1rem 2rem;
     background-color: $main-bg-color;
     color: white;
     &--title{
         font-size: 1.5rem;
         position: sticky;
-        top: 3.25rem;
+        top: 0;
         z-index: 1;
         background-color: inherit;
-        padding: 0 0 0.5rem 0;
+        padding: 1rem 0 0.5rem 0;
         @include tablet-and-desktop{
-            padding-bottom: 3rem;
+            padding: 0 0 2rem 0;
+            height: 8rem;
+            display: flex;
+            align-items: end;
         }
     }
     &--subtitle{

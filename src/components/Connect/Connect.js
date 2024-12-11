@@ -7,9 +7,9 @@ export default function Connect(){
     return(
         <>
         <div className='connect'>
-            <img className='connect--img' src={GitHubIcon} alt="Github Icon" title="Github"/>
-            <img className='connect--img' src={LinkedinIcon} alt="Linkedin Icon" title="Linkedin"/>
-            <img className='connect--img' src={EmailIcon} alt="Email Icon" title="Email"/>
+            <a target="_blank" href="https://github.com/Bita-Fotovvat"><img className='connect--img' src={GitHubIcon} alt="Github Icon" title="Github"/></a>
+            <a target="_blank" href="https://www.linkedin.com/in/bita-fotovvat/"><img className='connect--img' src={LinkedinIcon} alt="Linkedin Icon" title="Linkedin"/></a>
+            <a target="_blank" href="mailto:bita.fotovvat@gmail.com"><img className='connect--img' src={EmailIcon} alt="Email Icon" title="Email"/></a>
         </div>
         </>
     );

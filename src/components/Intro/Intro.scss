@@ -9,7 +9,7 @@
     color: white;
     @include tablet-and-desktop{
         padding-top: 1rem;
-        width: 38vw;
+        width: 36vw;
     }
     &--title{
         font-size: $main-title-fontsize;

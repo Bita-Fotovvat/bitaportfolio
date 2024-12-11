@@ -12,7 +12,9 @@
         justify-content:left;
         gap: 4vw;
         padding: 0 0 1rem 3rem;
-        
+    &--link{
+        target: blank;
+    }
     &--img{
         width: 20px;
         cursor: pointer;
