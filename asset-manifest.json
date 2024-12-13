@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/bitaportfolio/static/css/main.ea9f8f5d.css",
+    "main.js": "/bitaportfolio/static/js/main.46ffbfb1.js",
+    "static/media/xeushome.png": "/bitaportfolio/static/media/xeushome.a51822de74051c57ea5a.png",
+    "static/media/travelplanner.jpg": "/bitaportfolio/static/media/travelplanner.6f5165f8876a8fc81669.jpg",
+    "static/media/linkedin.png": "/bitaportfolio/static/media/linkedin.e572ae03bd786c8424b5.png",
+    "static/media/email-icon.png": "/bitaportfolio/static/media/email-icon.005829abca670383e99b.png",
+    "index.html": "/bitaportfolio/index.html",
+    "main.ea9f8f5d.css.map": "/bitaportfolio/static/css/main.ea9f8f5d.css.map",
+    "main.46ffbfb1.js.map": "/bitaportfolio/static/js/main.46ffbfb1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ea9f8f5d.css",
+    "static/js/main.46ffbfb1.js"
+  ]
+}
